@@ -1,2 +1,56 @@
 @charset "UTF-8";
 
+body {
+    background-color: #172026;
+    height: 1000px;
+            
+}
+
+header.main {
+    color: rgba(140, 154, 164, 0.749);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+div.box {
+            display: inline-block;
+            background-color: aliceblue;
+            text-align: center;
+            border: #172026;
+            height: 300px;
+            width: 500px;
+            margin: 380px;
+            margin-top: 20px;
+        }
+    div:hover {
+        background-color: aqua;
+    }
+
+nav.informations {
+        font-family: monospace;
+    }
+    nav > p {
+        display: none;
+    }
+    nav:hover > p {
+        display: block;
+        color: rgb(0, 0, 0);
+        background-color: aliceblue;
+        width: 100px;
+    }
+    nav:visited {
+        color: blue;
+       
+    }
+
+/* Pseudo-classes ( : ) onde definem estados de elementos dentro de HTML
+Pseudo-elementos ( :: ) age em classes, id, conteúdo periférico
+
+a = link
+a:visited / a:activate serve, muito para links
+a::after{
+    content: '  [link]';
+}
+
+Temos como colocar class em a ex: a href="" class=""> ~~ </a>

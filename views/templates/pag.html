@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- # Medidas absolutas: cm, mm, in, px, pt, pc
+
+Medidas relativas em,ex,rem,vw,vh, %
+16px = 1em
+em - relativo ao tamanho natural das fontes
+*px/em
+
+font-weight: bold/bolder - negrito em hmtl/css
+text-decoration: underline; - sublinhado
+
++ rápido: font: font style -> font weight -> font-size -> font-family
+
+para importar outras fontes: @import url
+
+fonte externas: uso de @font-face
+format ():
+-opentype (otf)
+-truetype (ttf)
+-embedded-opentype
+-truetype-aat
+-svg
+
+Seletores:
+x#y . Ex:
+h1 id="principal"
+css page: h1#principal {
+    x
+    }
+
+em HTMl id é = em CSS é #
+em HTML class é = em CSS é .
+
+<span class='x'> texto a se tornar "highlight" </span>
+
+div:hover "quando passar o mouse me cima acontece tal coisa"
+
+            nav > p {
+                    display: none;
+                }
+                nav:hover > p {
+                    display: block;
+                    color: rgb(0, 0, 0);
+                    background-color: aliceblue;
+                    width: 100px;
+                }
+                nav:hover {
+                    color: blue;
+                }
+ x > y, y seria filho de x
+
+
+Pyenv é uma ferramenta de linha de comando para sistemas *NIX e Windows,
+utilizada para gerenciar e alternar facilmente entre múltiplas versões do Python no mesmo computador.
+Ele permite definir versões globais ou específicas por projeto, evitando conflitos de dependências e sem depender da instalação do sistema.
+
+
+Ambientes virtuais:
+O venv foi embutido no pyhton, e é somente uma parte de todo o virtualenv
+virtualenv: 
+- mais rápido/ tem API/ tem ciclo de lançamento fora de python/ + segurança
+Existe uma escolha pessoal: virtualenv,
+env, poetry, pipenv (ver live #191)
+Não é global, é virtual.
+Instala bibliotecas que eu preciso só para aquele projeto
+python -m venv <nome_do_ambiente>
+-m = módulo
+É preciso ativar os venv ->  Shell -> cmd.exe ou powershell 
+cmd.exe : C:\v> <venv>\Scripts\activate.bat
+Para atualizar: pip install --upgrade pip
+pip list : para ver bibliotecas instaladas no venv
+PIP: pip install package, instala bibliotecas externas
+$deactivate
+
+Requirements:
+Dizer quais pacotes precisam ser instalados.
+arquivos requirements.txt é onde fazemos instalados
+#Pacotes que quero instalar 
+~~~~
+#Pacotes com versões específicas:
+flask != 3.5
+selenium ~= 1.1 "maior ou igual a 1.1, mas menor que 2"
+
+$ pip install -r requirements.txt
+
+para mostrar as versões de bibliotecas: pip freeze 
+ou pip freeze > requirements.yxy
+
+pip install pip-autoremove ~~ para desinstalar bibliotecas e suas dependências
+Ele detecta dependência cruzada
+
+!Faça pip freeze, deixe apenas libs principais, as dep vc remove !
+
+requirements_dev.txt - nesse arquivo listamos as coisas de desenvolvimento
+e instalamos por ele, as de produção. Ex: pytest/ipython/black/ipdb
+ipdb(debugger)
+pip install -r requirements_dev.txt-->
+</body>
+</html>

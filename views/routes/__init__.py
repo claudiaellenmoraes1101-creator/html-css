@@ -1,8 +1,11 @@
 #Para banco de dados
+from flask import Flask
 from flask import Blueprint
+from flask_sqlalchemy import SQLAlchemy
 
-users_bp = Blueprint('usuário', __name__)
 
-@users_bp.route('/usuario')
-def usuario():
-    return "Página do usuário"
+#Isso abaixo indica onde está o nosso banco de dados
+#db representa o banco de dados
+db = SQLAlchemy()
+
+
